@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="capturly" translate="label" sortOrder="400">
+            <label>capturly</label>
+        </tab>
+        <section id="capturly" translate="label" type="text" sortOrder="350" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Capturly - Tracking code install</label>
+            <tab>capturly</tab>
+            <resource>Capturly_Capturly::capturly</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="is_enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="tracking_code" translate="label" type="textarea" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Tracking code</label>
+                    <backend_model>Capturly\Capturly\Model\TrackingCode</backend_model>
+                    <comment>If you don’t have a Capturly ID yet, please go to our website and register your WordPress website to gain one.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

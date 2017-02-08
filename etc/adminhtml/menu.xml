@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Capturly_Capturly::capturly" title="Capturly" module="Capturly_Capturly"
+             sortOrder="44" resource="Capturly_Capturly::capturly"/>
+        <add id="Capturly_Capturly::settings" title="Settings" module="Capturly_Capturly" sortOrder="10"
+             action="adminhtml/system_config/edit/section/capturly"
+             resource="Capturly_Capturly::settings" parent="Capturly_Capturly::capturly"/>
+    </menu>
+</config>
