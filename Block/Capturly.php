@@ -40,16 +40,12 @@ class Capturly extends Template
 
 	public function getOrder()
 	{
-		$order = $this->_checkoutSession->getLastRealOrder();
-
-		return $order;
+        return $this->_checkoutSession->getLastRealOrder();
 	}
 
 	public function cleanUpValue($str)
 	{
-		$str = trim(htmlspecialchars(strip_tags($str)));
-
-		return $str;
+        return trim(htmlspecialchars(strip_tags($str)));
 
 	}
 
@@ -77,10 +73,7 @@ class Capturly extends Template
 	public function getOrderStoreName()
 	{
 		$name = $this->cleanUpValue($this->getOrder()->getStoreName());
-		$name = preg_replace("/\r|\n/", "", $name);
-		return $name;
-
-
+        return preg_replace("/\r|\n/", "", $name);
 	}
 
 	public function getOrderItems()

@@ -24,7 +24,7 @@
                 <field id="tracking_code" translate="label" type="textarea" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Tracking code</label>
                     <backend_model>Capturly\Capturly\Model\TrackingCode</backend_model>
-                    <comment>If you don’t have a Capturly ID yet, please go to our website and register your WordPress website to gain one.</comment>
+                    <comment>If you don't have your Capturly tracking code yet, please go to capturly.com and register your Magento website.</comment>
                 </field>
             </group>
         </section>

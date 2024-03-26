@@ -2,7 +2,7 @@
   "name": "capturly/magento2-plugin",
   "description": "The plugin allows you to easily setup the tool on your Magento website. Install the plugin, add your Capturly tracking code and start to optimize your website.",
   "type": "magento2-module",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "license": [
     "OSL-3.0",
     "AFL-3.0"
@@ -14,5 +14,8 @@
     "psr-4": {
       "Capturly\\Capturly\\": ""
     }
+  },
+  "require": {
+        "php": ">=8.0"
   }
 }
